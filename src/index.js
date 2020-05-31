@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {RecoilRoot} from 'jared-recoil';
 
 import './index.css';
-import Example from './Example5';
+import Example from './Example6-atomFamily';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

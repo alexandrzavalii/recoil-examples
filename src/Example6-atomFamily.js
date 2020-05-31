@@ -1,45 +1,28 @@
 import React from 'react';
 import {
-    atom,
+    atomFamily,
     useRecoilValue,
     useRecoilCallback,
 } from 'jared-recoil';
+import Title from "./common/Title";
 
-const dataAtom = atom({
-    key: 'dataAtom',
-    default: []
+
+
+
+const counterState = atomFamily({
+    key: 'counterState',
+    default: param=>param,
 });
 
-function FetchRequest() {
-    const fetchRequest = useRecoilCallback(async ({set}) => {
-        const response = await fetch(`https://reqres.in/api/users?page=1`)
-        const userDetails = await response.json();
-        set(dataAtom, userDetails.data);
-    },[]);
-
-    return (
-        <button onClick={fetchRequest}>Fetch Request</button>
-    )
+const Counter = ({initialValue}) => {
+    const counter = useRecoilValue(counterState(initialValue))
+    return <h3>Counting:{counter}</h3>
 }
-
-const List = () => {
-    const contents = useRecoilValue(dataAtom);
-    return contents.map(v=>(
-        <p key={v.id}>
-            <b>Name</b>: {v.first_name} {v.last_name} <a href={`mailto: ${v.email}`}>{v.email}</a>
-        </p>
-    ))
-}
-
-const Title = () => (
-    <h3>Async Fetch with useCallback</h3>
-)
-
-const Example5 = () => (
+const Example6 = () => (
     <>
-        <Title/>
-        <List/>
-        <FetchRequest/>
+        <Title>Sample For: atomFamily</Title>
+        <Counter initialValue={0}/>
+        <Counter initialValue={5}/>
     </>
 )
-export default Example5;
+export default Example6;

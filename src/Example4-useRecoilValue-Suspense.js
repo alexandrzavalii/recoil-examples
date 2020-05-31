@@ -3,6 +3,7 @@ import {
     selector,
     useRecoilValue,
 } from 'jared-recoil';
+import Title from "./common/Title";
 
 
 const fetchUserDetails = selector({
@@ -33,9 +34,12 @@ const People = () => {
     )
 }
 const Example4UseRecoilValueSuspense = () => (
+    <>
+        <Title>Sample for: useRecoilValue with Suspense</Title>
         <React.Suspense fallback="loading">
             <People/>
         </React.Suspense>
+        </>
 )
 
 export default Example4UseRecoilValueSuspense;

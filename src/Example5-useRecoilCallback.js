@@ -4,6 +4,7 @@ import {
     useRecoilValue,
     useRecoilCallback,
 } from 'jared-recoil';
+import Title from "./common/Title";
 
 const dataAtom = atom({
     key: 'dataAtom',
@@ -31,13 +32,9 @@ const List = () => {
     ))
 }
 
-const Title = () => (
-    <h3>Async Fetch with useCallback</h3>
-)
-
 const Example5UseRecoilCallback = () => (
 <>
-    <Title/>
+    <Title>Async Fetch with useCallback</Title>
     <List/>
     <FetchRequest/>
 </>
