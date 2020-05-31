@@ -1,13 +1,9 @@
 import React from 'react';
 import {
     atomFamily,
-    useRecoilValue,
-    useRecoilCallback,
+    useRecoilState,
 } from 'jared-recoil';
 import Title from "./common/Title";
-
-
-
 
 const counterState = atomFamily({
     key: 'counterState',
@@ -15,9 +11,15 @@ const counterState = atomFamily({
 });
 
 const Counter = ({initialValue}) => {
-    const counter = useRecoilValue(counterState(initialValue))
-    return <h3>Counting:{counter}</h3>
+    const [counter,setCounter] = useRecoilState(counterState(initialValue))
+    return (
+        <>
+            <h3>Counting:{counter}</h3>
+            <button onClick={()=>setCounter(val=>val+1)}>add one</button>
+        </>
+    )
 }
+
 const Example6 = () => (
     <>
         <Title>Sample For: atomFamily</Title>
@@ -25,4 +27,5 @@ const Example6 = () => (
         <Counter initialValue={5}/>
     </>
 )
+
 export default Example6;
