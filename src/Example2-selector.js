@@ -6,6 +6,7 @@ import {
   useRecoilState,
   useSetRecoilState,
 } from "jared-recoil";
+import Title from "./common/Title";
 
 const tempFahrenheit = atom({
   key: "tempFahrenheit",
@@ -50,10 +51,10 @@ const TempCelcius = () => {
 };
 
 export default () => (
-  <div>
-    <h1>Calculator</h1>
+  <>
+    <Title>Selector Example</Title>
     <Farenheit />
     <AddFahrenheit />
     <TempCelcius />
-  </div>
+  </>
 );

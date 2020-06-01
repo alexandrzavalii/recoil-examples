@@ -5,6 +5,7 @@ import {
   useRecoilState,
   useSetRecoilState,
 } from "jared-recoil";
+import Title from "./common/Title";
 
 const countState = atom({
   key: "countState",
@@ -33,9 +34,9 @@ const Addition = () => {
 };
 
 export default () => (
-  <div>
-    <h1>Calculator</h1>
+  <>
+    <Title>Atom Example</Title>
     <Counter />
     <Addition />
-  </div>
+  </>
 );
