@@ -8,3 +8,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - useRecoilValue [docs](https://recoiljs.org/docs/api-reference/core/useRecoilValue)
 - useRecoilValueLoadable [docs](https://recoiljs.org/docs/api-reference/core/useRecoilValueLoadable) Example3-useRecoilValueLoadable.js
 - atomFamily [docs](https://recoiljs.org/docs/api-reference/utils/atomFamily) Example6-atomFamily.js
+- selectorFamily [docs](https://recoiljs.org/docs/api-reference/utils/selectorFamily) Example7-selectorFamily.js
