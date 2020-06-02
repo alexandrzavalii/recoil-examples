@@ -7,6 +7,7 @@ import "./index.css";
 import Example1 from "./Example1-atom";
 import Example2 from "./Example2-selector";
 import Example3 from "./Example3-useRecoilValueLoadable";
+import Example8 from "./Example8-useTransactionObservation";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,6 +25,9 @@ ReactDOM.render(
               <li>
                 <Link to="/useRecoilValueLoadable">useRecoilValueLoadable</Link>
               </li>
+              <li>
+                <Link to="/useTransactionObserver">useTransactionObserver</Link>
+              </li>
             </ul>
           </nav>
 
@@ -36,6 +40,9 @@ ReactDOM.render(
             </Route>
             <Route exact path="/useRecoilValueLoadable">
               <Example3 />
+            </Route>
+            <Route exact path="/useTransactionObserver">
+              <Example8 />
             </Route>
           </Switch>
         </div>
