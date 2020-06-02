@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  atom,
-  selector,
-  useRecoilValueLoadable,
-  useRecoilState,
-} from "jared-recoil";
+import { atom, selector, useRecoilValueLoadable, useRecoilState } from "recoil";
 
 const paginationState = atom({
   key: "paginationState",

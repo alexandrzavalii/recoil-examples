@@ -1,5 +1,5 @@
 import React from "react";
-import { atom, useRecoilValue, useRecoilCallback } from "jared-recoil";
+import { atom, useRecoilValue, useRecoilCallback } from "recoil";
 import Title from "./common/Title";
 
 const dataAtom = atom({

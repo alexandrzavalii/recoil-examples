@@ -1,5 +1,5 @@
 import React from "react";
-import { selector, useRecoilValue } from "jared-recoil";
+import { selector, useRecoilValue } from "recoil";
 import Title from "./common/Title";
 
 const fetchUserDetails = selector({

@@ -5,7 +5,7 @@ import {
   useRecoilValue,
   useRecoilState,
   useSetRecoilState,
-} from "jared-recoil";
+} from "recoil";
 import Title from "./common/Title";
 
 const tempFahrenheit = atom({

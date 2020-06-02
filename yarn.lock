@@ -7828,9 +7828,9 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-"recoil@git+https://git@github.com/facebookexperimental/Recoil.git":
-  version "0.0.7"
-  resolved "git+https://git@github.com/facebookexperimental/Recoil.git#e47e0f53a0163658f32a9ac19a7050b7476dbc10"
+recoil@0.0.8:
+  version "0.0.8"
+  resolved "https://artifactory.workday.com/artifactory/api/npm/npm-virtual/recoil/-/recoil-0.0.8.tgz#b24eb00fb8bfcbefb68836dc5ebc93cf884ed0f4"
 
 recursive-readdir@2.2.2:
   version "2.2.2"

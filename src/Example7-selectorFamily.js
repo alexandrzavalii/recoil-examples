@@ -1,5 +1,5 @@
 import React from "react";
-import { atom, atomFamily, selectorFamily, useRecoilValue } from "jared-recoil";
+import { atom, selectorFamily, useRecoilValue } from "recoil";
 
 import Title from "./common/Title";
 

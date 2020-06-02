@@ -1,5 +1,5 @@
 import React from "react";
-import { atomFamily, useRecoilState } from "jared-recoil";
+import { atomFamily, useRecoilState } from "recoil";
 import Title from "./common/Title";
 
 const counterState = atomFamily({
